@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
-    <link rel="stylesheet" href="static/css/style.css">
+    {% load staticfiles %}
+    <link rel="stylesheet" type="text/css" href="{% static 'myCss/style.css' %}" />
 </head>
 <body>
     <h2>Here are some of my favorite albums: </h2>
     <div>
         {% block content %}{% endblock %}
     </div>
-
 </body>
 </html>
